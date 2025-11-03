@@ -1,0 +1,29 @@
+:root {
+  /* Paleta de Colores de Terra Angels */
+  --color-primary-blue: #0D47A1;    /* Azul Profundo (Textos/Headers) */
+  --color-secondary-mint: #8BC34A;  /* Verde Menta (Fondos de Secciones) */
+  --color-accent-yellow: #FFC107;   /* Amarillo Solar (Acentos/CTAs) */
+  
+  /* Colores Neutrales */
+  --color-white: #ffffff;
+  --color-black: #2c3e50;
+}
+
+/* Estilos Globales para Patitas y Tipografía */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--color-white);
+  /* Aplicamos el patrón de patitas */
+  background-image: url('');
+  background-repeat: repeat;
+  background-attachment: fixed; /* Opcional: para que el fondo no se mueva al hacer scroll */
+  color: var(--color-black);
+}
+
+h1, h2, h3 {
+  color: var(--color-primary-blue);
+}
+
+.text-accent {
+  color: var(--color-accent-yellow);
+}
