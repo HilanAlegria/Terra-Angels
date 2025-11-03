@@ -2,16 +2,17 @@
   <div class="contact-view">
     <TheHeader />
     <div class="contact-content container">
-      <h2 class="section-title">¡Contáctanos y Reserva!</h2>
-      <p class="subtitle">Estamos en **Cali, Colombia**. ¡Conversemos sobre tu mejor amigo!</p>
+      <h2 class="section-title">¡Únete a la Misión y <span class="text-accent">Transforma Vidas</span>!</h2>
+      <p class="subtitle">Estamos en Cali, Colombia. ¡Conversemos sobre cómo puedes ayudar a nuestros caninos!</p>
       
       <ContactForm />
 
       <div class="contact-details">
-        <h3>Información Directa</h3>
-        <p>Teléfono: **+57 300 555 1234**</p>
-        <p>Email: **hola@terraangels.com**</p>
-        <p>Horario: Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+        <h3>Información Directa y Legal</h3>
+        <p>Teléfono: +57 300 555 1234 (Coordinación de Voluntariado)</p>
+        <p>Email: ayuda@terraangels.org (Cambio de dominio a .org para reflejar Fundación)</p>
+        <p>Horario de Oficina: Lunes a Viernes, 9:00 AM - 5:00 PM</p>
+        <p class="legal-note">Para reportar un caso de rescate, por favor llame al teléfono de emergencia.</p>
       </div>
     </div>
     <TheFooter />
@@ -24,7 +25,7 @@ import TheFooter from '@/components/shared/TheFooter.vue';
 import ContactForm from '@/components/shared/ContactForm.vue';
 
 export default {
-  name: 'ContactView',
+  name: 'ContactView', 
   components: {
     TheHeader,
     TheFooter,
@@ -52,6 +53,10 @@ export default {
   text-align: center;
 }
 
+.text-accent {
+    color: var(--color-accent-yellow); 
+}
+
 .subtitle {
   font-size: 1.1em;
   margin-bottom: 40px;
@@ -72,5 +77,12 @@ export default {
 
 .contact-details p {
   margin: 5px 0;
+}
+
+.legal-note {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 15px;
+    color: #666;
 }
 </style>

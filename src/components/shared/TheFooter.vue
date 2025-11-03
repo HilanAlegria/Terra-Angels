@@ -4,18 +4,19 @@
       
       <div class="footer-info">
         <h3 class="footer-title">Terra Angels</h3>
-        <p>Descanso y diversión para tu mejor amigo.</p>
+        <p>Rescatando, rehabilitando y promoviendo la adopción responsable de caninos en Cali.</p>
         <p class="location">
-          Ubicación Principal: Cali, Valle del Cauca, Colombia
+          Fundación sin ánimo de lucro - Cali, Valle del Cauca, Colombia
         </p>
       </div>
 
       <div class="footer-links">
         <h4 class="links-title">Enlaces Rápidos</h4>
         <ul>
-          <li><a href="#acerca">Misión y Equipo</a></li>
-          <li><a href="#servicios">Todos los Servicios</a></li>
-          <li><a href="#precios">Tarifas</a></li>
+          <li><a href="#acerca">Nuestra Misión</a></li>
+          <li><a href="#programas">Nuestros Programas</a></li>
+          <li><a href="#dona">Apadrina / Dona</a></li>
+          <li><a href="/adopta">Perros en Adopción</a></li> 
           <li><a href="#">Política de Privacidad</a></li>
         </ul>
       </div>
@@ -23,16 +24,14 @@
       <div class="footer-social">
         <h4 class="links-title">Conéctate</h4>
         <div class="social-icons">
-          
-          
-          
-        </div>
-        <p class="contact-text">¡Contáctanos para una cita!</p>
+          </div>
+        <p class="contact-text">¡Involúcrate o sé Voluntario!</p>
+        <p class="contact-email">Email: ayuda@terraangels.org</p> 
       </div>
     </div>
     
     <div class="copyright">
-      &copy; {{ currentYear }} Terra Angels. Todos los derechos reservados.
+      &copy; {{ currentYear }} Fundación Terra Angels. Todos los derechos reservados.
     </div>
   </footer>
 </template>
@@ -49,6 +48,7 @@ export default {
 </script>
 
 <style scoped>
+/* Los estilos se mantienen, pero añadimos el estilo para el email en el área social */
 .main-footer {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
@@ -114,13 +114,18 @@ export default {
   width: 30px;
   height: 30px;
   margin-right: 15px;
-  filter: invert(100%); /* Hace los iconos blancos para fondo azul */
+  filter: invert(100%); 
 }
 
 .contact-text {
     margin-top: 15px;
     font-style: italic;
     color: var(--color-secondary-mint);
+}
+
+.contact-email {
+    margin-top: 5px;
+    font-weight: 500;
 }
 
 .copyright {

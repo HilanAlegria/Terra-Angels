@@ -7,59 +7,70 @@
 
       <AboutSection id="acerca" />
 
-      <ServicesList id="servicios" />
+      <CanineGallery id="galeria" /> 
+
+      <ProgramsList id="programas" />
+
+      <DonationLevels id="dona" />
 
       <BusinessModel id="negocio" />
 
-      <PricingTable id="precios" />
     </div>
     
     <TheFooter />
-
-    </div>
+  </div>
 </template>
 
 <script>
-// Importamos los componentes de layout
-import TheHeader from '@/components/shared/TheHeader.vue'; // <-- AGREGAR
-import TheFooter from '@/components/shared/TheFooter.vue'; // <-- AGREGAR
+import TheHeader from '@/components/shared/TheHeader.vue'; 
+import TheFooter from '@/components/shared/TheFooter.vue'; 
 
-// Importamos los componentes de sección
 import HeroSection from '@/components/sections/HeroSection.vue';
 import AboutSection from '@/components/sections/AboutSection.vue';
-import ServicesList from '@/components/sections/ServicesList.vue';
-import BusinessModel from '@/components/sections/BusinessModel.vue';
-import PricingTable from '@/components/sections/PricingTable.vue';
+
+// CAMBIO 1: Renombrar la importación de ServicesList a ProgramsList
+import ProgramsList from '@/components/sections/ProgramsList.vue'; 
+
+import BusinessModel from '@/components/sections/BusinessModel.vue'; 
+
+// CAMBIO 2: Renombrar la importación de PricingTable a DonationLevels
+import DonationLevels from '@/components/sections/DonationLevels.vue';
+
+import CanineGallery from '@/components/sections/CanineGallery.vue'; 
 
 export default {
   name: 'HomeView',
   components: {
-    // Componentes de Layout
-    TheHeader, // <-- AGREGAR
-    TheFooter, // <-- AGREGAR
+    TheHeader, 
+    TheFooter, 
     
-    // Componentes de Contenido
     HeroSection,
     AboutSection,
-    ServicesList,
-    BusinessModel,
-    PricingTable,
+    
+    // CAMBIO 3: Usar el nuevo nombre en la lista de componentes
+    ProgramsList, 
+    
+    BusinessModel, 
+    
+    // CAMBIO 4: Usar el nuevo nombre en la lista de componentes
+    DonationLevels, 
+    
+    CanineGallery, 
   }
 };
 </script>
 
 <style scoped>
+/* Estilos sin cambios */
 .home-view-wrapper {
-  /* Contenedor que puede ayudar a centrar el contenido si es necesario */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 .home-view {
-  /* Contenedor principal del contenido */
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
+  flex-grow: 1; 
 }
 </style>

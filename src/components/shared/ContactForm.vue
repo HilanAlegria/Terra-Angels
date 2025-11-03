@@ -16,14 +16,14 @@
     </div>
 
     <div class="form-group">
-      <label for="service">Servicio de Interés <span class="required">*</span></label>
-      <select id="service" v-model="form.service" required>
-        <option value="" disabled>Selecciona un servicio</option>
-        <option>Adiestramiento Canino</option>
-        <option>Guardería en Casa (Dog Sitting)</option>
-        <option>Paseos Caninos</option>
-        <option>Charlas Educativas</option>
-        <option>Terapias Asistidas Educativas (TAE)</option>
+      <label for="motive">Motivo de Contacto <span class="required">*</span></label>
+      <select id="motive" v-model="form.motive" required>
+        <option value="" disabled>Selecciona un motivo</option>
+        
+        <option>Estoy interesado en Adopción</option>
+        <option>Quiero ser Voluntario/a</option>
+        <option>Consulta sobre Apadrinamiento o Donación</option>
+        <option>Necesito reportar un Rescate</option>
         <option>Consulta General</option>
       </select>
     </div>
@@ -33,7 +33,7 @@
       <textarea id="message" v-model="form.message" rows="5" required></textarea>
     </div>
 
-    <button type="submit" class="cta-button submit-button">Enviar Consulta</button>
+    <button type="submit" class="cta-button submit-button">Enviar Mensaje</button>
     <p v-if="successMessage" class="success-message">{{ successMessage }}</p>
   </form>
 </template>
@@ -47,7 +47,7 @@ export default {
         name: '',
         email: '',
         phone: '',
-        service: '',
+        motive: '', 
         message: ''
       },
       successMessage: ''
@@ -55,12 +55,10 @@ export default {
   },
   methods: {
     submitForm() {
-      // Aquí se enviaría la data a un backend o servicio de email (ej: Netlify Forms, Google Sheets, API)
-      console.log('Formulario Enviado:', this.form);
+      console.log('Formulario Enviado (Motivo de Colaboración):', this.form);
       
-      this.successMessage = '¡Gracias! Tu mensaje ha sido enviado. Te contactaremos pronto.';
-      // Limpiar formulario
-      this.form = { name: '', email: '', phone: '', service: '', message: '' };
+      this.successMessage = '¡Gracias! Tu mensaje ha sido recibido. Procesaremos tu solicitud de colaboración pronto.';
+      this.form = { name: '', email: '', phone: '', motive: '', message: '' }; 
     }
   }
 };

@@ -1,8 +1,8 @@
-/* ==================================== */
-/* 1. ESTILOS DE TIPOGRAFÍA Y SECCIONES */
-/* ==================================== */
-
-/* Títulos principales de sección */
+/* Agrega esto a tus estilos globales */
+html {
+    /* Habilita la animación suave al navegar a anclas (#) */
+    scroll-behavior: smooth; 
+}
 .section-title {
   text-align: center;
   font-size: 2.8em;
@@ -16,7 +16,6 @@
   margin-right: auto;
 }
 
-/* Subtítulos dentro de una sección */
 .section-subtitle {
   text-align: center;
   font-size: 2em;
@@ -24,10 +23,6 @@
   margin-bottom: 30px;
   color: var(--color-primary-blue);
 }
-
-/* ==================================== */
-/* 2. ESTILOS DE TARJETAS Y FONDOS */
-/* ==================================== */
 
 .info-card {
   padding: 30px;
@@ -44,24 +39,19 @@
   color: inherit; 
 }
 
-/* Clases para aplicar los colores de fondo */
 .primary-blue-bg {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
 }
 
 .primary-blue-bg .card-title {
-  color: var(--color-accent-yellow); /* Acento para títulos en fondo azul */
+  color: var(--color-accent-yellow); 
 }
 
 .secondary-mint-bg {
   background-color: var(--color-secondary-mint);
   color: var(--color-black);
 }
-
-/* ==================================== */
-/* 3. ESTILOS DE BOTÓN CTA */
-/* ==================================== */
 
 .cta-button {
   display: inline-block;

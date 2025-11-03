@@ -1,6 +1,6 @@
 <template>
   <section class="about-section" id="acerca">
-    <h2 class="section-title">Acerca de <span class="text-accent">Terra Angels</span></h2>
+    <h2 class="section-title">Nuestra <span class="text-accent">Misión y Compromiso</span></h2>
     <div class="container">
       
       <div class="mission-vision-grid">
@@ -14,7 +14,7 @@
         </div>
       </div>
 
-      <h3 class="section-subtitle">Conoce al Equipo</h3>
+      <h3 class="section-subtitle">Conoce a los Pilares de la Fundación</h3>
       <div class="team-grid">
         <div v-for="member in team" :key="member.name" class="team-member-card">
           
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="cute-dog-image">
-        
+         <p>Conoce el rostro detrás de cada rescate y adopción.</p>
       </div>
     </div>
   </section>
@@ -39,7 +39,8 @@
 import { useMainStore } from '@/stores/mainStore';
 import { storeToRefs } from 'pinia'; 
 
-import rosaImage from '@/assets/images/team/rosa.jpeg';
+// Importaciones de imágenes se mantienen
+import rosaImage from '@/assets/images/team/rosa.jpg';
 import davidImage from '@/assets/images/team/david.jpeg';
 import valeriaImage from '@/assets/images/team/valeria.png';
 
@@ -47,6 +48,7 @@ export default {
   name: 'AboutSection',
   setup() {
     const mainStore = useMainStore();
+    // Extraemos la data ya actualizada
     const { team, mission, vision } = storeToRefs(mainStore);
 
     const teamWithImages = team.value.map(member => {
@@ -71,6 +73,7 @@ export default {
 </script>
 
 <style scoped>
+/* Los estilos CSS se mantienen, ya que son neutros a la temática */
 .about-section {
   padding: 60px 0;
   background-color: var(--color-white); 

@@ -4,123 +4,143 @@ export const useMainStore = defineStore('main', {
   state: () => ({
     
     // ===================================
-    // DATOS DE SECCIÓN MODELO DE NEGOCIO
+    // DATOS DE SECCIÓN MODELO DE NEGOCIO (Ahora: Modelo de Impacto)
     // ===================================
     businessModel: {
       partners: [
-        "Veterinarias y Clínicas en Cali: Para referencias y atención de emergencia.",
-        "Tiendas de Suministros (Pet Shops): Para productos de calidad y descuentos a clientes.",
-        "Entrenadores Certificados: Red de apoyo para casos especializados de comportamiento.",
-        "Organizaciones de Rescate Animal: Colaboración en charlas y adopciones."
+        "Clínicas Veterinarias Aliadas: Para cirugías y atención especializada de rescates.",
+        "Refugios y Hogares de Paso: Red de apoyo para albergar temporalmente a los caninos.",
+        "Empresas Donantes: Patrocinio de eventos, campañas o insumos fijos.",
+        "Voluntarios y Padrinos: Base fundamental para la operación y sostenibilidad."
       ],
       activities: [
-        "Adiestramiento y Guardería: Ejecución de los servicios principales con excelencia.",
-        "Gestión de Rutas y Logística: Optimización de paseos y dog sitting a domicilio.",
-        "Creación de Contenido Educativo: Desarrollo de material para charlas y redes sociales.",
-        "Mantenimiento de Redes: Interacción constante y profesional en plataformas digitales."
+        "Rescate y Rehabilitación: Logística médica, conductual y emocional de caninos abandonados.",
+        "Gestión de Adopciones: Proceso riguroso de selección de familias y seguimiento post-adopción.",
+        "Recaudación de Fondos y Eventos: Campañas para asegurar el sustento médico y alimenticio.",
+        "Educación y Sensibilización: Charlas sobre tenencia responsable y bienestar animal."
       ],
       channels: [
-        "Instagram y Facebook: Contenido visual diario de actividades y logros.",
-        "Página Web (Actual): Centro de información, reservas y contacto.",
-        "WhatsApp Business: Comunicación rápida y gestión de citas.",
-        "Grupos Comunitarios Locales: Participación activa en la zona de Cali."
+        "Instagram y Facebook: Historias de rescate, perros en adopción y campañas de donación.",
+        "Página Web (Actual): Centro de información, formularios de adopción/voluntariado y donaciones.",
+        "WhatsApp Business: Coordinación rápida con adoptantes y voluntarios.",
+        "Eventos de Adopción y Ferias: Participación en la comunidad para encontrar hogares."
       ],
       relationships: [
-        "Seguimiento Post-Servicio: Encuestas de satisfacción y ajuste de programas.",
-        "Comunicaciones Personalizadas: Reportes diarios (fotos/videos) de la guardería o paseos.",
-        "Opiniones de Clientes: Módulo de testimonios integrado en la web.",
-        "Fidelización: Descuentos o beneficios por referidos y antigüedad."
+        "Seguimiento Post-Adopción: Visitas y contacto para garantizar la adaptación del canino.",
+        "Comunicaciones Personalizadas: Reportes y agradecimientos a donantes y padrinos.",
+        "Historias de Éxito: Módulo de testimonios/adopciones felices integrado en la web.",
+        "Fidelización de Padrinos: Reconocimientos y beneficios por su apoyo constante."
       ]
     },
 
     // ===================================
-    // DATOS DE SECCIÓN SOBRE NOSOTROS
+    // DATOS DE SECCIÓN SOBRE NOSOTROS (Enfoque en Misión)
     // ===================================
-    mission: "Nuestra misión es enriquecer la vida de los perros y la de sus familias, ofreciendo servicios profesionales y personalizados de paseo, guardería en casa, y adiestramiento. Nos dedicamos a fomentar el bienestar físico y mental de cada canino, fortaleciendo el vínculo entre ellos y sus dueños a través de experiencias positivas y educativas, y promoviendo una convivencia armónica y respetuosa entre humanos y animales.",
-    vision: "Aspiramos a ser la empresa líder y de mayor confianza en el cuidado y entrenamiento canino, reconocida por nuestra excelencia, innovación y el profundo amor que tenemos por los animales. Buscamos crear una comunidad de dueños de mascotas informados y comprometidos, donde cada perro tenga la oportunidad de crecer feliz, saludable y bien adaptado a su entorno, contribuyendo así a una sociedad más empática y consciente del bienestar animal.",
+    mission: "Nuestra misión es transformar la realidad del abandono canino en Cali, brindando rescate integral, rehabilitación física y emocional, y encontrando hogares responsables y amorosos a través de programas de adopción rigurosos. Nos dedicamos a ser la voz de los que no la tienen.",
+    vision: "Ser la fundación líder en el Valle del Cauca, reconocida por la transparencia y efectividad de nuestros programas, logrando un impacto significativo en la reducción del maltrato y abandono animal y promoviendo una cultura de respeto y tenencia responsable en la sociedad.",
     team: [
-        {
-          name: "Rosa María Cabal",
-          role: "Charlas educativas y terapias asistidas con caninos educativas",
-          initials: "RMC"
-        },
-        {
-          name: "David Osorio",
-          role: "Paseador y entrenador canino",
-          initials: "DO"
-        },
-        {
-          name: "Valeria Arias",
-          role: "Contabilidad y administración",
-          initials: "VA"
-        }
+      {
+        name: "Rosa María Cabal",
+        role: "Coordinadora de Programas de Rescate y Voluntariado",
+        initials: "RMC"
+      },
+      {
+        name: "David Osorio",
+        role: "Rehabilitación Canina y Logística de Adopciones",
+        initials: "DO"
+      },
+      {
+        name: "Valeria Arias",
+        role: "Administración, Finanzas y Transparencia",
+        initials: "VA"
+      }
     ],
 
     // ===================================
-    // DATOS DE SERVICIOS (ServicesList.vue usa esta data)
+    // DATOS DE PROGRAMAS DE IMPACTO (Misión social)
+    // ===================================
+    impactPrograms: [
+      { 
+        id: 1, 
+        title: "Programa de Rescate y Salud", 
+        description: "Brindamos atención veterinaria inmediata, medicamentos, esterilización y refugio a caninos en situación de abandono o maltrato. El primer paso para su nueva vida.",
+        imageDescription: "dog receiving vet care"
+      },
+      { 
+        id: 2, 
+        title: "Programa de Adopción Responsable", 
+        description: "Un proceso riguroso que evalúa al canino y a la familia adoptante para asegurar una compatibilidad perfecta. Garantizamos seguimiento para una integración exitosa.",
+        imageDescription: "family adopting a dog"
+      },
+      { 
+        id: 3, 
+        title: "Programa de Voluntariado y Apadrinamiento", 
+        description: "Ofrecemos oportunidades para que la comunidad se involucre, ya sea paseando perros, asistiendo en eventos o contribuyendo económicamente a través de nuestro plan de padrinos.",
+        imageDescription: "volunteer walking a dog"
+      },
+      { 
+        id: 4, 
+        title: "Educación y Sensibilización Comunitaria", 
+        description: "Realizamos charlas en escuelas y comunidades sobre la tenencia responsable de mascotas, la importancia de la esterilización y el impacto del abandono animal.",
+        imageDescription: "group of people and dogs learning"
+      }
+    ],
+
+    // ===================================
+    // DATOS DE SERVICIOS COMERCIALES (Reintroducidos como fuente de ingresos)
     // ===================================
     services: [
-        { 
-          id: 1, 
-          title: "Adiestramiento Canino Profesional", 
-          description: "Programas personalizados para corregir conductas y fortalecer la obediencia básica y avanzada, creando un perro equilibrado y un vínculo sólido.",
-          imageDescription: "dog doing a trick"
-        },
-        { 
-          id: 2, 
-          title: "Guardería en Casa (Dog Sitting a Domicilio)", 
-          description: "Cuidado personalizado para tu mascota en la comodidad de su propio hogar. Ideal para perros que prefieren su entorno o necesitan atención especial, ¡como si estuvieras ahí!",
-          imageDescription: "dog relaxing on a couch"
-        },
-        { 
-          id: 3, 
-          title: "Paseos Caninos Seguros y Educativos", 
-          description: "Paseos enfocados en la estimulación física y mental. Rutas seguras y tiempo de calidad para asegurar que tu perro regrese feliz y relajado a casa.",
-          imageDescription: "happy dog on a leash"
-        },
-        { 
-          id: 4, 
-          title: "Charlas Educativas para Dueños", 
-          description: "Sesiones formativas sobre comportamiento canino, nutrición, primeros auxilios y manejo de estrés. Conviértete en un dueño más informado y seguro.",
-          imageDescription: "group of people and dogs learning"
-        },
-        { 
-          id: 5, 
-          title: "Terapias Asistidas Educativas (TAE)", 
-          description: "Programas especializados donde nuestros caninos certificados asisten en terapias para fines educativos y emocionales, promoviendo el bienestar humano-animal.",
-          imageDescription: "child interacting with a therapy dog"
-        }
+      { 
+        id: 5, 
+        title: "Adiestramiento Canino Profesional", 
+        description: "Programas personalizados para corregir conductas y fortalecer la obediencia básica y avanzada, creando un perro equilibrado y un vínculo sólido. El 50% de las ganancias se destina al programa de rescate.",
+        imageDescription: "dog doing a trick"
+      },
+      { 
+        id: 6, 
+        title: "Guardería en Casa (Dog Sitting a Domicilio)", 
+        description: "Cuidado personalizado para tu mascota en la comodidad de su propio hogar con personal capacitado por la fundación. Apoya la alimentación de un canino rescatado por día.",
+        imageDescription: "dog relaxing on a couch"
+      },
+      { 
+        id: 7, 
+        title: "Paseos Caninos Seguros y Educativos", 
+        description: "Paseos enfocados en la estimulación física y mental. Rutas seguras y tiempo de calidad. Contratando este servicio financias la esterilización de un perro en la comunidad cada mes.",
+        imageDescription: "happy dog on a leash"
+      }
     ],
 
     // ===================================
-    // DATOS DE PRECIOS (PricingTable.vue usa esta data)
+    // NIVELES DE DONACIÓN 
     // ===================================
-    prices: [
-        {
-          service: "Paseos Caninos",
-          cop: "$150.000 COP",
-          usd: "~ $38 USD",
-          frequency: "Mensuales (Paquetes)"
-        },
-        {
-          service: "Guardería en Casa",
-          cop: "$80.000 COP",
-          usd: "~ $20 USD",
-          frequency: "Por día (Dog Sitting)"
-        },
-        {
-          service: "Terapias Asistidas",
-          cop: "$80.000 COP",
-          usd: "~ $20 USD",
-          frequency: "Por hora / Terapia"
-        },
-        {
-          service: "Adiestramiento de Perros",
-          cop: "$200.000 - $500.000 COP",
-          usd: "~ $50 - $125 USD",
-          frequency: "Mensuales (Programas)"
-        }
+    donationLevels: [
+      {
+        level: "Padrino de Comida",
+        cop: "$75.000 COP",
+        usd: "~ $19 USD",
+        description: "Cubre el alimento de un canino por 15 días. Contribución vital y constante."
+      },
+      {
+        level: "Padrino Médico",
+        cop: "$150.000 COP",
+        usd: "~ $38 USD",
+        description: "Cubre vacunas esenciales y desparasitación de un canino rescatado, preparándolo para la adopción."
+      },
+      {
+        level: "Héroe de Rescate",
+        cop: "$300.000 COP",
+        usd: "~ $75 USD",
+        description: "Cubre los costos iniciales de rescate, transporte y hospitalización básica de un canino en estado crítico."
+      },
+      {
+        level: "Donación Libre",
+        cop: "Cualquier Monto",
+        usd: "¡Es bienvenida!",
+        description: "Permite cubrir gastos operativos, mantenimiento de refugio o terapias especializadas no cubiertas."
+      }
     ]
   }),
-  getters: {}
+  getters: {
+    // Aquí puedes mantener tus getters o añadir nuevos si son necesarios.
+  }
 });

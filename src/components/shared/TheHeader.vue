@@ -32,10 +32,14 @@
         <ul>
           <li><router-link to="/" @click="closeMenu">Inicio</router-link></li>
           <li><a href="#acerca" @click="closeMenu">Nosotros</a></li>
-          <li><a href="#servicios" @click="closeMenu">Servicios</a></li>
-          <li><a href="#negocio" @click="closeMenu">Estructura</a></li>
-          <li><a href="#precios" @click="closeMenu">Precios</a></li>
-          <li><router-link to="/contacto" class="nav-cta cta-button" @click="closeMenu">¡Contáctanos!</router-link></li>
+          
+          <li><a href="#galeria" @click="closeMenu">Momentos Felices</a></li> 
+          
+          <li><a href="#programas" @click="closeMenu">Programas y Servicios</a></li> 
+          
+          <li><a href="#dona" @click="closeMenu">Dona</a></li> 
+          
+          <li><router-link to="/involucrate" class="nav-cta cta-button" @click="closeMenu">¡Involúcrate!</router-link></li>
         </ul>
       </nav>
     </div>
@@ -43,7 +47,7 @@
 </template>
 
 <script>
-import logoImage from '@/assets/images/logo-terra-angels.png';
+import logoImage from '@/assets/images/LOGO-TERRA-ANGELS-02.png';
 
 export default {
   name: 'TheHeader',
