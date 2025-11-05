@@ -4,7 +4,7 @@
       
       <div class="footer-info">
         <h3 class="footer-title">Terra Angels</h3>
-        <p>Rescatando, rehabilitando y promoviendo la adopción responsable de caninos en Cali.</p>
+        <p>Rescatando, rehabilitando y promoviendo la adopción responsable de animales en Cali.</p>
         <p class="location">
           Fundación sin ánimo de lucro - Cali, Valle del Cauca, Colombia
         </p>
@@ -16,18 +16,31 @@
           <li><a href="#acerca">Nuestra Misión</a></li>
           <li><a href="#programas">Nuestros Programas</a></li>
           <li><a href="#dona">Apadrina / Dona</a></li>
-          <li><a href="/adopta">Perros en Adopción</a></li> 
+          <li><a href="/adopta">Mascotas en Adopción</a></li> 
           <li><a href="#">Política de Privacidad</a></li>
         </ul>
       </div>
 
       <div class="footer-social">
-        <h4 class="links-title">Conéctate</h4>
-        <div class="social-icons">
-          </div>
-        <p class="contact-text">¡Involúcrate o sé Voluntario!</p>
-        <p class="contact-email">Email: ayuda@terraangels.org</p> 
-      </div>
+    <h4 class="links-title">Conéctate</h4>
+    <div class="social-icons">
+      
+      <a href="URL_TU_INSTAGRAM" target="_blank" aria-label="Instagram">
+        <font-awesome-icon :icon="['fab', 'instagram']" /> 
+      </a>
+      
+      <a href="URL_TU_FACEBOOK" target="_blank" aria-label="Facebook">
+        <font-awesome-icon :icon="['fab', 'facebook-f']" /> 
+      </a>
+      
+      <a href="https://fundacionrunningpaws.org/" target="_blank" aria-label="Website Adicional">
+        <font-awesome-icon :icon="['fas', 'paw']" /> 
+      </a>
+
+    </div>
+    <p class="contact-text">¡Involúcrate o sé Voluntario!</p>
+    <p class="contact-email">Email: ayuda@terraangels.org</p> 
+</div>
     </div>
     
     <div class="copyright">
@@ -48,7 +61,7 @@ export default {
 </script>
 
 <style scoped>
-/* Los estilos se mantienen, pero añadimos el estilo para el email en el área social */
+/* Los estilos base se mantienen */
 .main-footer {
   background-color: var(--color-primary-blue);
   color: var(--color-white);
@@ -81,8 +94,8 @@ export default {
 }
 
 .location {
-    font-weight: 600;
-    margin-top: 10px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 .links-title {
@@ -110,22 +123,43 @@ export default {
   color: var(--color-accent-yellow);
 }
 
-.social-icons img {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-  filter: invert(100%); 
+/* --- ESTILOS AÑADIDOS/MODIFICADOS PARA ÍCONOS SOCIALES --- */
+.social-icons {
+  display: flex; /* Alinea los íconos horizontalmente */
+  gap: 15px;
+  margin-top: 10px;
 }
 
+.social-icons a {
+  color: var(--color-white);
+  font-size: 1.8em; /* Tamaño del ícono */
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: var(--color-accent-yellow);
+}
+
+/* Si usas Font Awesome o una librería similar, estos estilos son suficientes.
+   Si usas imágenes SVG, el estilo 'social-icons img' debe ser:
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%); 
+}
+*/
+
+/* Resto de estilos */
 .contact-text {
-    margin-top: 15px;
-    font-style: italic;
-    color: var(--color-secondary-mint);
+  margin-top: 15px;
+  font-style: italic;
+  color: var(--color-secondary-mint);
 }
 
 .contact-email {
-    margin-top: 5px;
-    font-weight: 500;
+  margin-top: 5px;
+  font-weight: 500;
 }
 
 .copyright {
@@ -147,7 +181,12 @@ export default {
     margin-bottom: 30px;
   }
   .links-title {
-    margin: 0 auto 15px;
+    /* Centra el título en móvil */
+    margin: 0 auto 15px; 
+  }
+  .social-icons {
+    /* Centra los íconos */
+    justify-content: center;
   }
 }
 </style>

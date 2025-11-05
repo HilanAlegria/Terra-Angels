@@ -1,10 +1,10 @@
 <template>
   <section class="programs-section" id="programas">
-    <h2 class="section-title">Nuestros <span class="text-accent">Programas de Impacto y Servicios</span> Premium</h2>
+    <h2 class="section-title">Nuestros <span class="text-accent">Programas de Impacto y Servicios</span></h2>
     
     <div class="container">
       
-      <p class="section-description">El ingreso generado por nuestros servicios premium financia directamente nuestros programas de rescate y adopción.</p>
+      <p class="section-description">El ingreso generado por nuestros servicios financia directamente nuestros programas de rescate y adopción.</p>
 
       <h3 class="subsection-title">Programas de Rescate y Apoyo Social</h3>
       <div class="programs-grid">
@@ -15,7 +15,7 @@
         />
       </div>
 
-      <h3 class="subsection-title">Servicios Comerciales (Premium)</h3>
+      <h3 class="subsection-title">Servicios Comerciales</h3>
       <div class="programs-grid">
         <ServiceCard 
           v-for="service in services" 

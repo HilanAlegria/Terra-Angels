@@ -15,7 +15,7 @@
       </div>
       
       <div class="video-area">
-  <h3>Video Destacado: Historias de ayuda con perritos</h3>
+  <h3>Video Destacado: Historias de ayuda con nustras lindas mascotas</h3>
   
   <div class="video-placeholder responsive-video">
     <video 

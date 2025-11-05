@@ -1,7 +1,7 @@
 <template>
   <section class="donation-section" id="dona">
     <h2 class="section-title">¡Sé un Héroe! <span class="text-accent">Niveles de Apadrinamiento</span></h2>
-    <p class="subtitle">Tu aporte se convierte en rescate, alimento y salud para los caninos de Cali.</p>
+    <p class="subtitle">Tu aporte se convierte en rescate, alimento y salud para mascotas de Cali.</p>
     <div class="container">
       <div class="donation-grid">
         <div 

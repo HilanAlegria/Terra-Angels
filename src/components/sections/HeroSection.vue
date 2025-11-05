@@ -2,10 +2,10 @@
   <section class="hero-section" id="inicio">
     <div class="hero-content">
       <h1 class="hero-title">
-        Rescate, Esperanza y <br><span class="text-accent">Una Nueva Vida</span> para Caninos en Cali
+        Rescate, Esperanza y <br><span class="text-accent">Una Nueva Vida</span> para mascotas en Cali
       </h1>
       <p class="hero-subtitle">
-        Somos una fundación que rescata, rehabilita y encuentra hogares. Financiamos nuestra misión a través de servicios premium de adiestramiento y cuidado canino.
+        Somos una fundación que rescata, rehabilita y encuentra hogares. Financiamos nuestra misión a través de servicios de adiestramiento y cuidado de mascotas.
       </p>
       
       <div class="hero-actions">
